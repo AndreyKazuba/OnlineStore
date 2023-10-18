@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Корзина</title>
+</head>
+
+<body>
+    <div class="menu" id="menu">
+        <a href="../main/index.html" class="logo">
+            <img src="../img/logo.svg">
+            <div class="logo-text">
+                <div class="logo-name">KOSTASHOP</div>
+                <div class="logo-description">Компьютерная техника</div>
+            </div>
+        </a>
+        <a href="../catalog/index.html" class="nav-button bordered">Каталог товаров</a>
+        <a href="../info/index.html" class="nav-button">Покупателям</a>
+        <a id="cart-link-menu" href="../cart/index.html" class="nav-button bordered active">Корзина</a>
+        <a id="loginButtonMenu" href="../login/index.html" class="nav-button">Войти</a>
+        <a id="logoutButtonMenu" class="nav-button logout">Выйти</a>
+    </div>
+    <div class="header big">
+        <a href="../main/index.html" class="logo">
+            <img src="../img/logo.svg">
+            <div class="logo-text">
+                <div class="logo-name">KOSTASHOP</div>
+                <div class="logo-description">Компьютерная техника</div>
+            </div>
+        </a>
+        <div class="search">
+            <input type="text" id="search" placeholder="Поиск по каталогу" class="search-box">
+            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                    stroke="#bcbcbc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="nav-buttons">
+            <a href="../catalog/index.html" class="nav-button bordered">Каталог товаров</a>
+            <a href="../info/index.html" id="info-link" class="nav-button bordered">Покупателям</a>
+            <a href="../black-list/index.html" class="nav-button bordered" id="black-list-link">Черный список</a>
+            <a class="nav-button active" id="products-link">Товары</a>
+        </div>
+        <div class="nav-buttons right">
+            <a id="cart-link" href="../cart/index.html" class="nav-button bordered">Корзина</a>
+            <a id="loginButton" href="../login/index.html" class="nav-button">Войти</a>
+            <a id="logoutButton" class="nav-button logout">Выйти</a>
+        </div>
+    </div>
+    <div class="header small">
+        <a href="../main/index.html" class="logo">
+            <img src="../img/logo.svg">
+            <div class="logo-text">
+                <div class="logo-name">KOSTASHOP</div>
+                <div class="logo-description">Компьютерная техника</div>
+            </div>
+        </a>
+        <div class="burger" id="burger-button">
+            <img src="../img/burger-menu.svg">
+        </div>
+    </div>
+    <div class="main">
+        <div class="product-items" id="product-items"></div>
+        <div class="new-product" id="new-product">
+            <div class="name">Создать товар</div>
+            <div class="input-group">
+                <label>Название</label>
+                <input id="name" type="text">
+            </div>
+            <div class="input-group">
+                <label>Описание</label>
+                <textarea id="description" type="text"></textarea>
+            </div>
+            <div class="input-group">
+                <label>Цена</label>
+                <input id="price" type="number" min="1">
+            </div>
+            <label>Тип товара</label>
+            <div class="checkbox-group">
+                <input type="radio" checked name="product-type" value="1">
+                <span>Материнская плата</span>
+            </div>
+            <div class="checkbox-group">
+                <input type="radio" name="product-type" value="2">
+                <span>Готовая сборка</span>
+            </div>
+            <div class="checkbox-group">
+                <input type="radio" name="product-type" value="3">
+                <span>Процессор</span>
+            </div>
+            <div class="checkbox-group">
+                <input type="radio" name="product-type" value="4">
+                <span>Видеокарта</span>
+            </div>
+            <div class="error" id="invalid-data">Данные введены некорректно</div>
+            <div id="createNewButton" class="button">Создать</div>
+        </div>
+    </div>
+</body>
+<script src="../scripts/local-storage.js"></script>
+<script src="../scripts/common.js"></script>
+<script src="../scripts/navigation.js"></script>
+<script src="../scripts/header.js"></script>
+<script src="../scripts/search.js"></script>
+<script src="../scripts/http.js"></script>
+<script src="./script.js"></script>
+
+</html>

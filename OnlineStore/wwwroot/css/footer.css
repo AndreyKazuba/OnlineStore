@@ -1,0 +1,41 @@
+.footer {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.footer>.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    gap: 40px;
+}
+
+.footer>.info>* {
+    color: #8d8d8d;
+}
+
+.footer .copyright {
+    font-size: 10px;
+    margin: 10px 0 14px 0;
+    text-align: center;
+}
+
+.footer .copyright>* {
+    color: #a1a1a1;
+}
+
+.footer.absolute {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+@media (max-width: 400px) {
+    .footer {
+        display: none;
+    }
+}

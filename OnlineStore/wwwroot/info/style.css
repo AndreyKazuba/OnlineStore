@@ -1,0 +1,38 @@
+.main {
+    padding: 20px 40px;
+}
+
+h2 {
+    margin: 0;
+    color: #515151;
+    font-size: 16px;
+}
+
+p {
+    padding-bottom: 16px;
+    color: #767676;
+    border-bottom: solid #e7e7e7 1px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+p.none-border {
+    border: none;
+    padding-bottom: 4px;
+}
+
+li {
+    font-size: 14px;
+    color: #767676;
+    margin-top: 3px;
+}
+
+@media (max-width: 400px) {
+    .main {
+        padding: 20px;
+    }
+
+    ul {
+        margin-top: -10px;
+    }
+}

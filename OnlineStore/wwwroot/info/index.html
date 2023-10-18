@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>KostaShop</title>
+</head>
+
+<body>
+    <div class="menu" id="menu">
+        <a href="../main/index.html" class="logo">
+            <img src="../img/logo.svg">
+            <div class="logo-text">
+                <div class="logo-name">KOSTASHOP</div>
+                <div class="logo-description">Компьютерная техника</div>
+            </div>
+        </a>
+        <a href="../catalog/index.html" class="nav-button bordered">Каталог товаров</a>
+        <a href="../info/index.html" class="nav-button active">Покупателям</a>
+        <a id="cart-link-menu" href="../cart/index.html" class="nav-button bordered">Корзина</a>
+        <a id="loginButtonMenu" href="../login/index.html" class="nav-button">Войти</a>
+        <a id="logoutButtonMenu" class="nav-button logout">Выйти</a>
+    </div>
+    <div class="header big">
+        <a href="../main/index.html" class="logo">
+            <img src="../img/logo.svg">
+            <div class="logo-text">
+                <div class="logo-name">KOSTASHOP</div>
+                <div class="logo-description">Компьютерная техника</div>
+            </div>
+        </a>
+        <div class="search">
+            <input type="text" id="search" placeholder="Поиск по каталогу" class="search-box">
+            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                    stroke="#bcbcbc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="nav-buttons">
+            <a href="../catalog/index.html" class="nav-button bordered">Каталог товаров</a>
+            <a href="../info/index.html" id="info-link" class="nav-button active bordered">Покупателям</a>
+            <a href="../black-list/index.html" class="nav-button bordered" id="black-list-link">Черный список</a>
+            <a href="../products/index.html" class="nav-button" id="products-link">Товары</a>
+        </div>
+        <div class="nav-buttons right">
+            <a id="cart-link" href="../cart/index.html" class="nav-button bordered">Корзина</a>
+            <a id="loginButton" href="../login/index.html" class="nav-button">Войти</a>
+            <a id="logoutButton" class="nav-button logout">Выйти</a>
+        </div>
+    </div>
+    <div class="header small">
+        <a href="../main/index.html" class="logo">
+            <img src="../img/logo.svg">
+            <div class="logo-text">
+                <div class="logo-name">KOSTASHOP</div>
+                <div class="logo-description">Компьютерная техника</div>
+            </div>
+        </a>
+        <div class="burger" id="burger-button">
+            <img src="../img/burger-menu.svg">
+        </div>
+    </div>
+    <div class="main">
+        <h2>О компании</h2>
+        <p>
+            <b>KOSTASHOP</b> - интернет-магазин всевозможной компьютерной техники, комплектующих, аксессуаров!
+            <br>
+            Мы расширяемся каждый день, увеличиваем каталог товаров, чтобы Вы всегда могли заменить сломанные наушники
+            быстро и дешево!
+        </p>
+        <h2>Реквизиты</h2>
+        <p>
+            <b>Полное наименование компании</b>: Общество с ограниченной ответственностью “KOSTA МК”.
+            <br>
+            <b>Генеральный директор</b>: Костюков Матвей Михайлович.
+            <br>
+            <b>Юридический адреc</b>: 220025 г. Минск, ул.Слободская, 159.
+            <br>
+            <b>Телефон для связи</b>: +375 (29) 177-15-13.
+        </p>
+        <h2>Способы оплаты</h2>
+        <p>
+            <b>Банковской картой</b> - онлайн оплата банковской картой VISA, MasterCard, МИР, UnionPay возможна через
+            систему Assist Belarus.
+            <br>
+            <b>Наличный расчёт</b> - оптата наличными денежными средствами.
+        </p>
+        <h2>Способы получения товара</h2>
+        <p class="none-border">
+            <b>Доставка курьером</b> - наш курьер доставит Вам товар по указанному адресу. В пределах 20 км от Минска -
+            БЕСПЛАТНО, более 20 км - В ЗАВИСИМОСТИ ОТ РАССТОЯНИЯ.
+            <br>
+            <b>Самовывоз</b> - вы можете забрать товар по одному из нижеперечисленных адресов:
+        </p>
+        <ul>
+            <li>г. Минск, ул. Голубовского, 27</li>
+            <li>г. Минск, пер. Орловский, 83</li>
+            <li>г. Минск, пр-т Рокоссковского, 159</li>
+        </ul>
+    </div>
+</body>
+
+<script src="../scripts/common.js"></script>
+<script src="../scripts/local-storage.js"></script>
+<script src="../scripts/navigation.js"></script>
+<script src="../scripts/header.js"></script>
+<script src="../scripts/search.js"></script>
+<script src="../scripts/http.js"></script>
+
+</html>

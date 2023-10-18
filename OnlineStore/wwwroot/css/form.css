@@ -1,0 +1,140 @@
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+}
+
+.form-body {
+    border: solid 1px #ececec;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px #efefef;
+    padding: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 12px;
+}
+
+label {
+    font-size: 12px;
+    color: #808080;
+}
+
+input[type="text"], input[type="password"], input[type="number"], textarea {
+    height: 30px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    padding-top: 6px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, textarea:focus {
+    outline: solid 1px #7c71ff;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: bolder;
+}
+
+.button {
+    background-color: #7c71ff;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    width: fit-content;
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 16px;
+}
+
+.button:hover {
+    background-color: #6759ff;
+}
+
+.sub-link {
+    font-size: 13px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.sub-link > a {
+    text-decoration: none;
+    color: #7c71ff;
+}
+
+.sub-link > a:hover {
+    text-decoration: underline;
+    color: #6759ff;
+}
+
+.error {
+    color: #ff7171;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: white;
+    margin: 0;
+    font: inherit;
+    color: #7c71ff;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #bdbdbd;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #7c71ff;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.checkbox-group {
+    font-size: 13px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.checkbox-group>span {
+    color: #7d7d7d;
+}
+
+.radio-group {
+    margin-top: 6px;
+    margin-bottom: 14px;
+    display: flex;
+}

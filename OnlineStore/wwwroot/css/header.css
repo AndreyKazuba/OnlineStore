@@ -1,0 +1,164 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    height: 42px;
+    gap: 50px;
+    border-bottom: solid 1px #ececec;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 30px;
+    width: 30px;
+}
+
+.logo-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7c71ff;
+}
+
+.logo-description {
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.search {
+    position: relative;
+}
+
+.search svg {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.header .search-box {
+    width: 400px;
+    height: 30px;
+    border: solid 1px #ececec;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #ebebeb;
+    padding-left: 26px;
+}
+
+.search-box:focus {
+    outline: solid 1px #7c71ff;
+}
+
+.search-box:focus~svg path {
+    stroke: #7c71ff;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-button {
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    color: #7c71ff;
+}
+
+.nav-button.active {
+    color: #7c71ff;
+}
+
+.nav-button.bordered {
+    border-right: 1px solid #e2e2e2;
+}
+
+.nav-buttons.right {
+    margin-left: auto;
+}
+
+.nav-button.logout {
+    color: #ff6c6c;
+    display: none;
+}
+
+.nav-button.logout:hover {
+    color: #ff0000;
+}
+
+.header.small {
+    display: none;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger img {
+    height: 35px;
+}
+
+.menu {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.2s;
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .header.big {
+        display: none;
+    }
+
+    .menu .logo {
+        justify-content: start;
+        padding: 5px;
+        padding-left: 20px;
+        border-bottom: solid 1px #e7e7e7;
+    }
+
+    .nav-button {
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .nav-button:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .header.small {
+        display: flex;
+    }
+}
